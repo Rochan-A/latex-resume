@@ -17,7 +17,7 @@
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -48,6 +48,13 @@
     }
 }
 
+\newcommand{\resumeItemSingle}[2]{
+    \item\small{
+        {#1}{#2 \vspace{-2pt}}
+    }
+}
+
+
 \newcommand{\resumeSubheading}[4]{
     \vspace{-1pt}\item
         \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -72,31 +79,31 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\Large Rochan Avlur Venkat} & Email : \href{mailto:rochan170543@mechyd.ac.in}{rochan170543@mechyd.ac.in}\\
-    \textbf DOB : 14 May, 1999 & Phone: +91 91210 06945\\
-    \textbf Website : \href{https://rochan-a.github.io}{rochan-a.github.io} & Github: \href{https://www.github.com/Rochan-A}{@Rochan-A}\\
+	\textbf{\Large Rochan Avlur Venkat} & Email : \href{mailto:rochan170543@mechyd.ac.in}{rochan170543@mechyd.ac.in}\\
+	\textbf DOB : 14 May, 1999 & Github: \href{https://www.github.com/Rochan-A}{@Rochan-A}\\
+	\textbf Website : \href{https://rochan-a.github.io}{rochan-a.github.io}\\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Mahindra Ecole Centrale}{Hyderabad, India}
-            {Bachelor of Engineering in Computer Science; GPA: 3.56 (8.9/10.0)}{Aug. 2017 -- July, 2019}
-        \resumeSubheading
-            {AECS Maaruti Magnolia Pre University College}{Bangalore, India}
-            {High School; GPA: 3.20 (8.0/10.0)}{Jun. 2015 -- March. 2017}
+	\resumeSubHeadingListStart
+    		\resumeSubheading
+        		{Bachelor of Engineering in Computer Science}{Hyderabad, India}
+			{Mahindra \`{E}cole Centrale; GPA: 3.6 (9.0/10.0)}{Aug. 2017 - Current}
+%        \resumeSubheading
+%            {AECS Maaruti Magnolia Pre University College}{Bangalore, India}
+%            {High School; GPA: 3.20 (8.0/10.0)}{Jun. 2015 -- March. 2017}
 %        \resumeSubheading
 %            {Delhi Public School - East}{Bangalore, India}
 %            {High School; GPA: 3.9 (9.8/10.0)}{Jun. 2015}
-    \resumeSubHeadingListEnd
+	\resumeSubHeadingListEnd
 
 %-----------Scholastic Achievements-----------------
 \section{Scholastic Achievements}
     \resumeSubHeadingListStart
     	\resumeSubheading
-    		{Computer Science Department, Freshman Year}{Hyderabad, India}
-			{Academic Scholarship for top performing students}{May 2018}
+    		{Academic Scholarship}{Mahindra \`{E}cole Centrale}
+			{For top performing students in Computer Science Department}{2018}
 %		\resumeSubheading
 %			{SAT Test score}{Bangalore, India}
 %			{SAT: 1350/1600; Subject SAT: 2320/2400 (Physics: 770, Math: 800, Chemistry: 750)}{Nov 2016}
@@ -108,196 +115,134 @@
 	    		\resumeItem{Core Courses}
 	    			{}
 	    			\begin{itemize}
-					\item{\textbf{[Ongoing]} - \textit{Operating Systems, Principles of Programming Languages, Database Management Systems \& Microprocessors}}
-					\item{\textit{Theory of Computation, Design and Analysis of Algorithms, Digital Logic \& Design of Computer Architecture, Discrete Mathematics, Data Structures, C \& Python Programming Language}}
+					\item{\textit{Operating Systems, Principles of Programming Languages, Database Management Systems, Microprocessors, Theory of Computation, Design \& Analysis of Algorithms, Digital Logic \& Design of Computer Architecture, Discrete Mathematics, Data Structures}}
                  \end{itemize}
                \resumeItem{Mathematics}
 	    			{}
 	    			\begin{itemize}
-					\item{\textbf{[Ongoing]} - \textit{PDE's and Numerical Methods}}
-					\item{\textit{Numerical Methods, Probability, Random Processes \& Statistics, Linear Algebra, Calculus}}
+					\item{\textit{Partial Differential Equations, Numerical Methods, Probability, Random Processes \& Statistics, Linear Algebra, Calculus}}
                  \end{itemize}
 		    \resumeItemListEnd
 
-%\section{Research Interests}
-%\small{I am broadly interested in Artificial Intelligence with particular emphasis on Cognitive Modelling and Reinforcement Learning. I am curious to explore and understand the most mesmerizing aspect of human intelligence: our ability to extract and abstract information so rapidly and flexibly by perceiving and interacting with our environment. I like to ask myself questions like, "How do humans infer so much from so little?", "How do we construct causal relationships and abstract concepts?", "What are the underlying principles that enable generalization from very little data?" and so on. I am fascinated to study and take inspiration from human intelligence and apply it to intelligent agents to make them think and respond as humans do.
-%\\
-%In particular, my future research interests are directed towards improving the capabilities of existing intelligent systems in the following three areas: interpretability, transferability, and reasoning. I believe that each of the prior mentioned properties of intelligent systems is very crucial for bridging the gap between machine and human intelligence and for the advancement of artificial general intelligence.}
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
-
     \resumeSubHeadingListStart
         \resumeSubheading
-        {Mahindra Ecole Centrale}{Hyderabad, India}
-            {Junior}{Jan. 2019 - Current}
+        {Ongoing research in Deep Reinforcement Learning}{Hyderabad, India}
+            {Mahindra \`{E}cole Centrale}{Jan. 2019 - Current}
             \resumeItemListStart
-                \resumeItem{[Ongoing] Deep Reinforcement Learning \& Transfer Learning Research}
-{Working with Prof. Achal Agarwal a research project to construct compact and efficient feature representations for reinforcement learning problems. Worked with unsupervised image segmentation deep learning models and computer vision techniques. Conducted a survey on improving interpretability and transferability of RL algorithms.
-                    \begin{itemize}
-                        \item \textit{Language: Python}
-                        \item \textit{Libraries: sklearn, OpenCV, PyTorch}
-                    \end{itemize}
-                 }
-
-                \resumeItem{AI/ML for Cart Conversion - Dell Hack2Hire}
-{Worked in a team to develop a multifaceted solution to solve the cart conversion problem faced by e-commerce companies. Proposed solution was built on themes of Visual Design, Social Value, Customer Design and Machine Learning. My contribution included developing a recommender system using Bayesian Networks and ensemble learning (Classification and Regression methods) for cart abandonment prediction.
-                    \begin{itemize}
-                        \item \textit{Language: Python}
-                        \item \textit{Libraries: sklearn}
-                    \end{itemize}
-                 }
+                \resumeItemSingle
+{Working with Prof. Achal Agarwal on exploring feature extraction in Reinforcement Learning problems, specifically tackling Atari 2600 game environment. Working with unsupervised image segmentation DL models, computer vision techniques and popular RL algorithms such as DQN, A2C and PPO. Conducting a study on interpretability and transferability of RL algorithms.}{}
             \resumeItemListEnd
 
         \resumeSubheading
-        {Mahindra Ecole Centrale}{Hyderabad, India}
-            {Sophomore}{Aug. 2018 - Jul. 2019}
+        {Summer Research Intern}{Bangalore, India}
+            {Web Science Lab, International Institute of Information Technology}{May. 2019 - Jul. 2019}
             \resumeItemListStart
-
-                \resumeItem{Summer Research Intern - Web Science Lab, Center for Data Science, International Institute of Information Technology, Bangalore (IIIT-B)}
-{Worked on a research project that involved generation and validation of coherent learning pathways for online resources under the guidance of Prof. Srinath Srinivasa. My contribution included developing and integrating multiple NLP language models, topic models and LSTM models. Worked on developing and validating methods for modeling semantic context and exposition coherence between learning resources in a learning pathway. Developed a language model to generate virtual documents called topic2document (Available on GitHub) from topic distributions.
-                    \begin{itemize}
-                        \item \textit{Language: Python}
-                        \item \textit{Libraries: sklearn, gensim, tensorflow, keras, spacy, nltk}
-                    \end{itemize}
-}
-
-                \resumeItem{DinoEnv}
-                    {Developed an OpenAI Gym environment for the Google Chrome Dino game (Available on GitHub).}
-                    \begin{itemize}
-                        \item \textit{Language: Python}
-                        \item \textit{Libraries: pygame, gym}
-                    \end{itemize}
-			\resumeItemListEnd
-
-        \resumeSubheading
-        {Mahindra Ecole Centrale}{Hyderabad, India}
-            {Freshman}{Aug. 2017 - May, 2018}
-            \resumeItemListStart
-
-                \resumeItem{Summer Intern}
-{Conducted an in-depth study on NLP models, specifically topic models such as LDA, LSA, NMF \& TFIDF etc. Also focused on vector models such as lda2vec, doc2vec and word2vec. Developed and published a python package on PYPI called sptm (Sentence Prediction using Topic Modelling). Available on GitHub.
-                    \begin{itemize}
-                        \item \textit{Language: Python}
-                        \item \textit{Libraries: sklearn, gensim, MALLET, tensorflow, spacy, nltk}
-                    \end{itemize}
-}
-                   
-                   \resumeItem{CineLog - Team(2)}
-                    {Developing an Intelligent and Adaptive Framework to enable Multiplexes predict opening day sales of a movie \& optimize schedule to maximize profits both real-time and in near-future; designed and developed LSTM Networks, Sentiment Analysis and core RNN}
-                    \begin{itemize}
-                        \item \textit{Language: Python, golang}
-                        \item \textit{Libraries: Tensorflow, Pandas, numpy, matplotlib, sklearn, lstmpredictor, imdbpie, googleapiclient, request, python-twitter}
-                    \end{itemize}
-
-                \resumeItem{Harmonize - Team(3)}
-                    {Developed a Proof of Concept of a decentralized blockchain based Music Publishing \& Sharing Platform; designed and developed core blockchain and back-end services}
-                    \begin{itemize}
-                        \item \textit{Language: golang}
-                        \item \textit{Libraries: aws-sdk-go, websocket}
-                    \end{itemize}
-
-                \resumeItem{oWatcher - Individual}
-                    {Developed a Discord bot to display detailed in-game performance statistics of a players in Overwatch by Blizzard Entertainment. Available on GitHub.}
-                    \begin{itemize}
-                        \item \textit{Language: NodeJS}
-                        \item \textit{Libraries: discord.io, winston, OWAPI}
-                    \end{itemize}
-
+                \resumeItemSingle
+{Worked on a research project that involved generation and validation of coherent learning pathways for online resources under the guidance of Prof. Srinath Srinivasa. Contribution included developing and integrating multiple NLP language models, topic models and LSTM models in pathway generation pipeline. Worked on developing and validating techniques for modelling semantic context and exposition coherence between learning resources in a learning pathway. Developed a language model to generate virtual documents called \textbf{topic2document} from topic distributions (Available on GitHub).}{}
             \resumeItemListEnd
 
         \resumeSubheading
-        {AECS Maaruti Magnolia Pre University College}{Bangalore, India}
-            {High School Student}{Jun. 2015 - March. 2017}
-
+        {Summer Intern}{Bangalore, India}
+            {Under guidance of Anupam Mediratta}{May. 2018 - Jul. 2018}
             \resumeItemListStart
-
-                \resumeItem{Research in Video Compression Algorithms - Team(2)}
-                    {Worked alongside Prof. Chandrashekar Vaidhyanathan, Contributions included to algorithm design, implementation and testing; Involved a lossless compression scheme that can be extended to both Near-Lossless and Lossy compression}
-                    \begin{itemize}
-                        \item \textit{Language: C, R, Python}
-                        \item \textit{Libraries: ffmpeg, Libtiff, bnlearn, gRain}
-                    \end{itemize}
-
+                \resumeItemSingle
+{Conducted an in-depth study on NLP models, specifically topic models such as LDA, LSA, NMF \& TFIDF etc. Also focused on models such as lda2vec, doc2vec and word2vec. Developed and published a python package on PYPI called \textbf{sptm} (Sentence Prediction using Topic Modelling) (Available on GitHub).}{}
             \resumeItemListEnd
 
         \resumeSubheading
-        {Delhi Public School - East}{Bangalore, India}
-            {Middle School Student}{Jun. 2013 - March. 2015}
-
+        {Research on Video Compression Algorithms}{Bangalore, India}
+            {Under guidance of Prof. Chandrashekar Vaidhyanathan}{Aug. 2016 - May. 2017}
             \resumeItemListStart
-            \resumeItem{A Sensor Based System to effectively track Geriatric Care and Dementia patients}
-                {Was responsible in developing the full stack solution, including micro-controller programming, Android application development and back-end services}
-                \begin{itemize}
-                    \item \textit{Languages: Python, Java, Processing, MySQL}
-                    \item \textit{Libraries: NA}
-                \end{itemize}
-
+                \resumeItemSingle
+{Worked on developing a video compression algorithm. Contributions included to algorithm design, implementation and testing. Outcome was a lossless compression scheme that can be extended to both Near-Lossless and Lossy compression using Bayesian Networks and Entropy Encoding.}{}
             \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
+%----------Projects----------------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubItem{AI/ML for Cart Conversion}{Worked in a team to develop a multifaceted solution to solve the cart conversion problem faced by e-commerce companies. Proposed solution was built on themes of Visual Design, Social Value, Customer Design and Machine Learning. Contribution included developing a recommender system using Bayesian Networks and ensemble learning (Classification and Regression methods) for cart abandonment prediction.}
+
+        \resumeSubItem{DinoEnv Gym Environment}{Developed an OpenAI Gym environment for the Google Chrome Dino game (Available on GitHub).}
+
+        \resumeSubItem{CineLog}{Developed an Intelligent and Adaptive Framework to enable Multiplexes predict opening day sales of a movie \& optimize schedule to maximize profits both real-time and in near-future; designed and developed LSTM Networks, Sentiment Analysis and core RNN.}
+
+        \resumeSubItem{Harmonize}{Developed a Proof of Concept of a decentralized blockchain based Music Publishing \& Sharing Platform; designed and developed core blockchain and back-end services.}
+
+        \resumeSubItem{oWatcher}{Developed a Discord bot to display detailed in-game performance statistics of a players in Overwatch by Blizzard Entertainment (Available on GitHub).}
+
+        \resumeSubItem{A Sensor Based System to effectively track Geriatric Care and Dementia patients}{Was responsible in developing the full stack solution, including micro-controller programming, Android application development and back-end services.}
+
+	\resumeSubHeadingListEnd
+
 %-----------Awards-----------------
 \section{Awards \& Achievements}
     \resumeSubHeadingListStart
-        \resumeSubItem{2019 - Dell Hack2Hire Hackathon, Hyderabad, India - \textit{First Place}}
+        \resumeSubItem{\textit{First Place} - Dell Hack2Hire Hackathon, Hyderabad, India, 2019}
             {Proposed a multifaceted solution to the cart abandonment problem faced by e-commerce companies.}
-        \resumeSubItem{2018 - Pragyan Hackathon, Bangalore, India - \textit{Special Mention}}
+        \resumeSubItem{\textit{Special Mention} - Pragyan Hackathon, Bangalore, India, 2018}
             {Showcased an Adaptive Movie Scheduling Framework for Multiplexes using RNN's, LSTM, Sentiment Analysis and Machine Learning}
-      \resumeSubItem{2017 - Brave Hackathon, Hyderabad, India - \textit{First Place}}
+      \resumeSubItem{\textit{First Place} - Brave Hackathon, Hyderabad, India, 2017}
             {Showcased a Decentralized Music Publishing and Sharing Platform built over 24 Hours}
-      \resumeSubItem{2017 - Intel International Science and Engineering Fair (ISEF), Los Angeles, United States - \textit{Finalist}}
+      \resumeSubItem{\textit{Finalist} - Intel International Science and Engineering Fair (ISEF), Los Angeles, United States, 2017}
             {Showcased a research project titled - A Lossless Video Compression Technique Using Bayesian Networks and Entropy Coding}
-      \resumeSubItem{2017 - Intel Initiative for Research and Innovation in Science (IRIS), Pune, India - \textit{Grand Award Winner, Finalist}}
+      \resumeSubItem{\textit{Grand Award Winner \& Finalist} - Intel Initiative for Research and Innovation in Science (IRIS), Pune, India, 2016}
             {Showcased a research project titled - A Lossless Video Compression Technique Using Bayesian Networks and Entropy Coding}
-      \resumeSubItem{2015 - Intel Initiative for Research and Innovation in Science (IRIS), Bangalore, India - \textit{Finalist}}
-            {Showcased a research project on am Efficient Thermoelectric Refrigeration System}
-      \resumeSubItem{2014 - Open European Championship FIRST Lego League, Mannheim, Germany - \textit{Most Innovative Solution}}
+      \resumeSubItem{\textit{Finalist} - Intel Initiative for Research and Innovation in Science (IRIS), 2015 \& 2012}
+            {Showcased a research project on am Efficient Thermoelectric Refrigeration System; Showcased a solar cooker design that was inspired from the Parabolic and Box type designs}
+      \resumeSubItem{\textit{Most Innovative Solution} - Open European Championship FIRST Lego League, Mannheim, Germany, 2014}
             {Showcased a research project on the Utilization of T2 Bacteriophages to fight Food Contamination}
-      \resumeSubItem{2013 - FIRST Lego League (FLL), Regionals, Bangalore, India - \textit{Best Robot Design}}
+      \resumeSubItem{\textit{Best Robot Design} - FIRST Lego League (FLL), Regionals, Bangalore, India, 2013}
             {Showcased a robot design that was highly efficient while still remaining simplistic}
-      \resumeSubItem{2012 - Intel Initiative for Research and Innovation in Science (IRIS), Chandigarh, India - \textit{Finalist}}
-            {Showcased a solar cooker design that was inspired from the Parabolic and Box type designs}
     \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------%
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \item{\textbf{Languages}{: Python, C, R, C++, Golang}
-    \item{\textbf{Libraries \& Frameworks}{: libtiff, ffmpeg, ImageMagik, gensim, MALLET, OpenAI Gym, Pytorch, TensorFlow, sklearn}}
+    \item{\textbf{Languages}{: Python, C, R, C++, Golang, Java, NodeJS}
+    \item{\textbf{Libraries \& Frameworks}{: ffmpeg, OpenCV, gensim, spacy, nltk, MALLET, OpenAI Gym, Pytorch, TensorFlow, keras, sklearn}}
     \item{\textbf{Platforms}{: Nvidia DGX, AWS, GCP, Linux, Raspberry Pi, Arduino}}}
   \resumeSubHeadingListEnd
 
 %-----------Positions of Responsibility-----------------
 \section{Positions of Responsibility}
     \resumeSubHeadingListStart
-    	\resumeSubheading
-    		{President}{Hyderabad, India}
-			{Enigma, The Computer Science Club at Mahindra Ecole Centrale}{May 2019}
+	    	\resumeSubheading
+    			{President}{Hyderabad, India}
+			{Enigma, Computer Science Club at Mahindra \`{E}cole Centrale}{2019 - 2020}
+	    	\resumeSubheading
+    			{Vice President}{Hyderabad, India}
+			{Enigma, Computer Science Club at Mahindra \`{E}cole Centrale}{2018 - 2019}
+	    	\resumeSubheading
+	    		{Organizing Committee}{Hyderabad, India}
+			{MECHacks - 36 hour Hackathon at Mahindra \`{E}cole Centrale}{November 2018}
+		\resumeSubheading
+			{Organizing Committee}{Hyderabad, India}
+			{Mozilla Hackathon - Organized a 36 hour Hackathon with Mozilla Reps Community}{October 2018}
 		\resumeSubheading
 			{Student Member}{Intl.}
-			{ACM \& IEEE Student Member}{Since 2018}
-		\resumeSubheading
-			{Member}{Intl.}
-			{Sigma Xi Member}{Since 2017}
+			{ACM \& IEEE Student Member; Sigma Xi Member}{Since 2018}
     \resumeSubHeadingListEnd
 
 %-----------Conferences, Seminars & Workshops-----------------
 \section{Conferences, Seminars \& Workshops}
     \resumeSubHeadingListStart
     	\resumeSubheading
-    		{Undergraduate Research Symposium (URS)}{Hyderabad, India}
-			{Presented research work carried out at IIIT-B during Summer Research Internship}{Sept 2019}
+    		{Undergraduate Research Symposium, Mahindra \`{E}cole Centrale}{Hyderabad, India}
+			{Presented research work carried out @ IIIT-B; Selected for Oral Presentation}{Sept 2019}
     	\resumeSubheading
     		{IEEE Region 10 Symposium (IEEE TENSYMP)}{Kolkata, India}
 			{Presented paper, IEEEXplore Digital Library: ISBN: 978-1-7281-0297-9}{May 2019}
     	\resumeSubheading
-    		{International Conference on Machine Learning and Data Science}{Hyderabad, India}
-			{Attended two day conference held at Mahindra Ecole Centrale}{Dec 2018}
-		\resumeSubheading
-			{MECHacks Hackathon}{Hyderabad, India}
-			{Organized a 36 hour Hackathon as a part of Aether, the annual fest at Mahindra Ecole Centrale}{November 2018}
+    		{International Conference on Machine Learning and Data Science (ICMLDS)}{Hyderabad, India}
+			{Attended two day conference held at Mahindra \`{E}cole Centrale}{Dec 2018}
+%		\resumeSubheading
+%			{MECHacks Hackathon}{Hyderabad, India}
+%			{Organized a 36 hour Hackathon as a part of Aether, the annual fest at Mahindra Ecole Centrale}{November 2018}
 		\resumeSubheading
 			{Generative Art Workshop}{Hyderabad, India}
 			{Conducted an introductory session on Generative Art as a part of the Computer Sci. Club}{November 2018}
@@ -305,51 +250,17 @@
 			{Photo-Realistic Rendering Workshop}{Hyderabad, India}
 			{Conducted a session on Photo-Realistic Rendering as a part of the Computer Sci. Club}{November 2018}
 		\resumeSubheading
-			{Mozilla Hackathon}{Hyderabad, India}
-			{Organized a 36 hour Hackathon}{October 2018}
-		\resumeSubheading
 			{Python Workshop}{Hyderabad, India}
-			{Conducted a Python Workshop for fresher (First Year) as part of the Computer Sci. Club}{September 2018}
-
+			{Conducted a week long Python Workshop for Freshers}{Sept 2018}
     \resumeSubHeadingListEnd
 
 %-----------Extra-Curricular Activities-----------------
 \section{Extra-Curricular Activities}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-        {Football}{Hyderabad, India}
-            {}{}
-            \resumeItemListStart
-				\resumeItem{2019 - Current}
-					{Member of the Mahindra Ecole Centrale College Football A Team, represent the college at Inter-College Meets}
-            \resumeItemListEnd
-
-        \resumeSubheading
-        {Swimming}{Bangalore \& Hyderabad, India}
-            {}{}
-            \resumeItemListStart
-				\resumeItem{2017 - Current}
-					{Member of the Mahindra Ecole Centrale College Swimming Team, represent the college at Inter-College Meets}
-                \resumeItem{2015}
-                    {Participated in the FINIS State level Sub Junior/Junior Championship event – Freestyle, Butterfly \& Individual Medley events}
-    			\resumeItem{2012-15}
-    				{Represented Delhi Public School Bangalore East School Swim Team in a number of inter-school swimming competitions. Secured additional credits in CBSE Board}         
-                \resumeItemListEnd
-
-        \resumeSubheading
-        {Running}{Bangalore, India}
-        {}{}
-				\resumeItemListStart
-				\resumeItem{2015}
-    				{1st Place in the 5 km ‘Spirit of Wipro’ marathon run (Open non-employee category); Timing: 21 mins}         
-                \resumeItemListEnd
-        \resumeSubheading
-        {Music}{Bangalore, India}
-            {}{}
-			\resumeItemListStart
-				\resumeItem{2005-10}
-    				{Learnt playing Tabla (Indian percussion instrument). Cleared the Aadhya, Madya, Purna, 1st  year and 2nd year exams conducted by ‘Bangiya Sangeet Parishad’, Rabindra Bharati University, Kolkata}         
-                \resumeItemListEnd
-    \resumeSubHeadingListEnd
+	\begin{itemize}
+		\item \textbf{Football} : Member of the Mahindra Ecole Centrale College Football A Team, represent the college at Inter-College Meets.
+		\item \textbf{Swimming} : Member of the Mahindra Ecole Centrale College Swimming Team, represent the college at Inter-College Meets; Participated in the FINIS State level Sub Junior/Junior Championship event – Freestyle, Butterfly \& Individual Medley events; Represented Delhi Public School Bangalore East School Swim Team in a number of inter-school swimming competitions. Secured additional credits in CBSE Board.
+		\item \textbf{Running} : 1st Place in the 5 km ‘Spirit of Wipro’ marathon run (Open non-employee category); Timing: 21 mins
+		\item \textbf{Music} : Learnt playing Tabla (Indian percussion instrument). Cleared the Aadhya, Madya, Purna, 1st  year and 2nd year exams conducted by ‘Bangiya Sangeet Parishad’, Rabindra Bharati University, Kolkata.
+	\end{itemize}
 
 \end{document}
