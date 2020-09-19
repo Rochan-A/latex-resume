@@ -15,10 +15,9 @@
 \usepackage{fancyhdr}
 \usepackage{kpfonts}
 \usepackage{changepage}
+\usepackage[T1]{fontenc}
 
-\pagestyle{fancy}
 \fancyhf{}
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -30,7 +29,6 @@
 \addtolength{\textheight}{0.5in}
 \urlstyle{same}
 
-\raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
@@ -61,10 +59,18 @@
         \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingResearch}[4]{
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & \small #2 \\
+            \textit{#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=13pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -83,113 +89,113 @@
     \resumeSubHeadingListStart
         \item[] \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
                 \textbf{Mahindra \`{E}cole Centrale} & Hyderabad, India \\
-                \small Bachelors of Technology in Computer Science \& Engineering & \textit{\small 2017 - present} \\
+                \small Bachelors of Technology in Computer Science \& Engineering & \textit{\small Jul. 2017 - May 2021\footnotemark[1]} \\
                 \small GPA: 9.0/10 & \\
         \end{tabular*}
-    \resumeSubHeadingListEnd
-
-%-----------Papers & Publications-----------------
-\section{Papers \& Publications}
-    {\small(* denotes equal contribution)}
-    \resumeSubHeadingListStart
-        \item[] \textit{Training Convolutional Neural Networks with Differential Evolution using effective task apportioning on Hybrid CPU-GPU Architectures}
-        \vspace*{-3pt}\begin{adjustwidth}{15pt}{}
-            \textbf{Rochan Avlur Venkat}, Zakaria Oussalem, Arya Kumar Bhattacharya \\ \textit{Under review}, IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC), 2020
-        \end{adjustwidth}
-
-        \item[] \textit{Lossless Video Compression Using Bayesian Networks and Entropy Coding}
-        \vspace*{-3pt}\begin{adjustwidth}{15pt}{}
-            \textbf{Rochan Avlur Venkat}, Chandrasekar Vaidyanathan \\
-            IEEE Region 10 Symposium (TENSYMP), 2019
-        \end{adjustwidth}
+        \footnotetext[1]{Expected}
     \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\section{Professional Experience}
+\section{Research Experience}
     \resumeSubHeadingListStart
-        \resumeSubheading
-            {Research Intern}{Center for Computational Visualization, University of Texas, Austin}
+        \resumeSubheadingResearch
+            {Research Intern}{University of Texas, Austin}
             {Mentor: \href{http://www.cs.utexas.edu/~bajaj/cvc/}{Prof. Chandrajit Bajaj}}{Jun. 2020 - present}
-            % \resumeItemListStart
-            %     \resumeItemSingle
-            %     {Deep learning and reinforcement learning to build a system that can analyse a large amount of data efficiently by sampling a minimal amount of crucial information to provide the final inference. This project comes under the domain of deep generative models and deep reinforcement learning.}
-            % \resumeItemListEnd
+            \resumeItemListStart
+                \resumeItemSingle{Goal is to develop a system to accurately and efficiently predict prognosis of Prostate Cancer biopsies.}
+                \resumeItemSingle{Uses Multi-Task Reinforcement Learning \& Variational Auto-Encoders to analyse large amounts of data efficiently by sampling a minimal amount of crucial information.}
+            \resumeItemListEnd
 
-        \resumeSubheading
+        \resumeSubheadingResearch
+            {Training Neural Networks with Evolutionary Optimization}{Mahindra \`{E}cole Centrale}
+                {with Zakaria Oussalem \& \href{https://www.mahindraecolecentrale.edu.in/faculty/arya-K-bhattacharya}{Prof. Arya K Bhattacharya}}{Jan. 2020 - Jul. 2020}
+                \resumeItemListStart
+                    \resumeItemSingle{Studies the problem of training Neural Networks using Differential Evolution.}
+                    \resumeItemSingle{Uses task apportioning algorithm that attains in certain cases $\times350$ speedup on hybrid CPU-GPU architectures.}
+                \resumeItemListEnd
+    
+                \resumeSubheadingResearch
+            {Feature extraction for Reinforcement Learning}{Mahindra \`{E}cole Centrale}
+                {with \href{https://www.mahindraecolecentrale.edu.in/faculty/achal-agarwal}{Dr. Achal Agarwal}}{Jan. 2019 - Jan. 2020}
+                \resumeItemListStart
+                    \resumeItemSingle{Studies feature extraction techniques for Deep Reinforcement Learning in Atari 2600 environment.}
+                    \resumeItemSingle{Focused on unsupervised image segmentation models \& computer vision techniques in combination with DQN (\& its variants), A2C and PPO.}
+                \resumeItemListEnd
+
+        \resumeSubheadingResearch
         {Summer Research Intern}{International Institute of Information Technology, Bangalore}
             {Mentor: \href{https://www.iiitb.ac.in/faculty/srinath-srinivasa}{Prof. Srinath Srinivasa}}{May. 2019 - Jul. 2019}
             \resumeItemListStart
-                \resumeItemSingle{Worked on a research project that involved generation and validation of coherent learning pathways for online resources}
-                \resumeItemSingle{Contribution included developing and integrating multiple NLP language models, topic models and LSTM models in pathway generation pipeline. Also developed techniques for modelling semantic context and exposition coherence between learning resources in a learning pathway and validation methods.}
+                \resumeItemSingle{Developed NLP models for generating \& validating semantic context and exposition coherence between learning resources in a learning pathway.}
                 \resumeItemSingle{Developed a language model to generate virtual documents called \textbf{\href{https://github.com/Rochan-A/topic2document}{topic2document}} from topic distributions.}
             \resumeItemListEnd
 
-        \resumeSubheading
+        \resumeSubheadingResearch
         {Summer Intern}{ShowUpHotels, Bangalore}
             {Mentor: \href{https://in.linkedin.com/in/anupam-mediratta-60b5547}{Anupam Mediratta}}{May. 2018 - Jul. 2018}
             \resumeItemListStart
-                \resumeItemSingle{Conducted an in-depth study on NLP models, specifically topic models such as LDA, LSA, NMF \& TFIDF etc. Also focused on models such as lda2vec, doc2vec and word2vec.}
-                \resumeItemSingle{Developed and published a python package on PYPI called \textbf{\href{https://github.com/Rochan-A/sptm}{sptm}} (Sentence Prediction using Topic Modelling).}
+                \resumeItemSingle{Studied NLP (lda2vec, doc2vec \& word2vec) and topic models (LDA, LSA, NMF \& TFIDF).}
+                \resumeItemSingle{Developed and published a Python package on PYPI called \textbf{\href{https://github.com/Rochan-A/sptm}{sptm}} (Sentence Prediction using Topic Modelling).}
+            \resumeItemListEnd
+
+    \resumeSubheadingResearch
+        {Video Compression Algorithm}{Bangalore}
+            {with \href{https://in.linkedin.com/in/chandra-vaidyanathan-14b22966}{Dr. Chandrashekar Vaidhyanathan}}{Aug. 2016 - May. 2017}
+            \resumeItemListStart
+                \resumeItemSingle{This work proposes a lossless compression scheme that can be extended to both Near-Lossless and Lossy compression of video data.}
+                \resumeItemSingle{Extends on the work by \href{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.3641&rep=rep1&type=pdf}{\textbf{Davies \textit{et~al.}}} on using Bayesian Networks for lossless dataset compression.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%----------Projects----------------
-
-\section{Selected Projects}
+%-----------Papers & Publications-----------------
+\section{Publications}
     \resumeSubHeadingListStart
+        \item[] \textbf{Training Convolutional Neural Networks with Differential Evolution using effective task apportioning on Hybrid CPU-GPU Architectures}
+        \vspace*{-3pt}\begin{adjustwidth}{13pt}{}
+            \textit{\underline{Rochan Avlur Venkat}, Zakaria Oussalem, Arya K Bhattacharya} \\ \textit{Under review}
+        \end{adjustwidth}
 
-        \resumeSubheading
-        {Exploring feature extraction in Reinforcement Learning problems}{Mahindra \`{E}cole Centrale}
-            {Mentor: \href{https://www.mahindraecolecentrale.edu.in/faculty/achal-agarwal}{Prof. Achal Agarwal}}{Jan. 2019 - Jan. 2020}
-%             \resumeItemListStart
-%                 \resumeItemSingle
-% {Exploring feature extraction in Reinforcement Learning problems, specifically tackling Atari 2600 game environment. Working with unsupervised image segmentation DL models, computer vision techniques and popular RL algorithms such as DQN, A2C and PPO. Conducting a study on interpretability and transferability of RL algorithms.}{}
-%             \resumeItemListEnd
-
-        \resumeSubheading
-        {Video Compression Algorithm}{Bangalore}
-            {Mentor: \href{https://in.linkedin.com/in/chandra-vaidyanathan-14b22966}{Chandrashekar Vaidhyanathan}}{Aug. 2016 - May. 2017}
-%             \resumeItemListStart
-%                 \resumeItemSingle
-% {Worked on developing a video compression algorithm. Contributions included to algorithm design, implementation and testing. Outcome was a lossless compression scheme that can be extended to both Near-Lossless and Lossy compression using Bayesian Networks and Entropy Encoding.}{}
-%             \resumeItemListEnd
-
-        \resumeSubItem{Distributed Compute Fabric using Mobile Devices}{Worked in a team to develop a platform to make computation on smartphones accessible and profitable. Aim was to tackle under-utilization of smartphones and large energy usage \& pricing of datacenters. Contributions included designing and implementing efficient data and compute traffic distribution algorithms.}
-
-        \resumeSubItem{AI/ML for Cart Conversion}{Worked in a team to develop a multifaceted solution to solve the cart conversion problem faced by e-commerce companies. Proposed solution was built on themes of Visual Design, Social Value, Customer Design and Machine Learning. Contribution included developing a recommender system using Bayesian Networks and ensemble learning (Classification and Regression methods) for cart abandonment prediction.}
-
-        \resumeSubItem{\href{https://github.com/Rochan-A/gym-dino/}{DinoEnv Gym Environment}}{Developed an OpenAI Gym environment for research in Reinforcement Learning algorithms based on the Google Chrome Dino game.}
-
-        \resumeSubItem{CineLog}{Developed an Intelligent and Adaptive Framework to enable Multiplexes predict opening day sales of a movie \& optimize schedule to maximize profits both real-time and in near-future; designed and developed LSTM Networks, Sentiment Analysis and core RNN.}
-
-        \resumeSubItem{Harmonize}{Developed a Proof of Concept of a decentralized blockchain based Music Publishing \& Sharing Platform; designed and developed core blockchain and back-end services.}
-
-        \resumeSubItem{\href{https://github.com/Rochan-A/oWatcher}{oWatcher}}{Developed a Discord bot to display detailed in-game performance statistics of a players in Overwatch by Blizzard Entertainment.}
-
-        % \resumeSubItem{A Sensor Based System to effectively track Geriatric Care and Dementia patients}{Was responsible in developing the full stack solution, including micro-controller programming, Android application development and back-end services.}
-
+        \item[] \textbf{Lossless Video Compression Using Bayesian Networks and Entropy Coding}
+        \vspace*{-3pt}\begin{adjustwidth}{13pt}{}
+            \textit{\underline{Rochan Avlur Venkat}, Chandrasekar Vaidyanathan} \\
+            IEEE Region 10 Symposium (IEEE TENSYMP), Kolkata, India, 2019
+        \end{adjustwidth}
     \resumeSubHeadingListEnd
+
+
+%----------Projects----------------
+\section{Selected Projects}
+\resumeSubHeadingListStart
+    \small
+    \item{\textbf{Distributed Compute Fabric using Mobile Devices}{: Framework to exploit under-utilization of compute resources in smartphones}
+    \vspace*{-8pt}\item{\textbf{AI/ML for Cart Conversion}{: Solution to cart-conversion problem built on themes of Visual Design, Social Value, Customer Design and Machine Learning}}
+    \vspace*{-8pt}\item{\textbf{\href{https://github.com/Rochan-A/gym-dino/}{DinoEnv Gym Environment}}{: OpenAI Gym environment based on the Google Chrome Dino game}}
+    \vspace*{-8pt}\item{\textbf{CineLog}{: An Intelligent and Adaptive framework to assist theaters predict sales \& footfall}}
+    \vspace*{-8pt}\item{\textbf{Harmonize}{: Proof of Concept of a decentralized blockchain based Music Publishing \& Sharing Platform}}
+    \vspace*{-8pt}\item{\textbf{\href{https://github.com/Rochan-A/oWatcher}{oWatcher}}{: Discord bot to display detailed in-game performance statistics of a players in Overwatch by Blizzard Entertainment}}
+\resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------%
 \section{Technical Skills}
 \resumeSubHeadingListStart
-  \item{\textbf{Languages}{: Python, C, R, C++, Golang, Java}
-  \vspace*{-8pt}\item{\textbf{Libraries \& Frameworks}{: OpenCV, OpenAI Gym, Pytorch, TensorFlow, keras, sklearn}}
+  \item{\textbf{Programming Languages}{: Python, C, R, Rust, C++, Golang, Java}
+  \vspace*{-8pt}\item{\textbf{Libraries}{: OpenCV, Gym, PyTorch, NumPy, SciPy, Pandas, scikit-learn}}
   \vspace*{-8pt}\item{\textbf{Platforms}{: Nvidia DGX, AWS, GCP, Linux}}}
+  \vspace*{-8pt}\item{\textbf{Tools}{: \LaTeX, Git}
 \resumeSubHeadingListEnd
 
 %-----------Awards-----------------
 \section{Awards \& Service}
     {\small
     \begin{adjustwidth}{10pt}{}
-        Finalist, Smart India Hackathon, 2020 \\
-        Mahindra \`{E}cole Centrale Academic Scholarship, 2018 \\
-        President (Fmr. Vice-President), Mahindra \`{E}cole Centrale Computer Science Club, 2019, 2018 \\
-        Selected for Oral Presentation, Undergraduate Research Symposium, Mahindra \`{E}cole Centrale, 2019 \\
-        Finalist, Intel International Science and Engineering Fair (ISEF), 2017 \\
-        Grand Award Winner \& Finalist, Intel Initiative for Research and Innovation in Science (IRIS), 2016 \\
-        Finalist, Intel Initiative for Research and Innovation in Science (IRIS), 2015, 2012 \\
-        Most Innovative Solution, Open European Championship FIRST Lego League, 2014
+        First Place, Smart India Hackathon -- 2020 \\
+        Academic Scholarship, Mahindra \`{E}cole Centrale -- 2017-2018 \\
+        President (Fmr. Vice-President), Mahindra \`{E}cole Centrale Computer Science Club -- 2019, 2018 \\
+        Oral Presentation, Undergraduate Research Symposium, Mahindra \`{E}cole Centrale -- 2019 \\
+        Finalist, Intel International Science and Engineering Fair (ISEF) -- 2017 \\
+        Grand Award Winner \& Finalist, Intel Initiative for Research and Innovation in Science (IRIS) -- 2016 \\
+        Finalist, Intel Initiative for Research and Innovation in Science (IRIS) -- 2015, 2012 \\
+        Most Innovative Solution, Open European Championship FIRST Lego League -- 2014
     \end{adjustwidth}
     }
 
